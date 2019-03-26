@@ -5,12 +5,8 @@ def roman_to_decimal(roman_number):
             decimal_number = decimal_number + 1
         if letter == 'V':
             decimal_number = decimal_number + 5
-        if letter == 'VI':
-            decimal_number = decimal_number + 6
-        if letter == 'VII':
-            decimal_number = decimal_number + 7
-        if letter == 'VIII':
-            decimal_number = decimal_number + 8
+            if ant == 'I':
+                decimal_number = decimal_number - 1
         if letter == 'X':
             decimal_number = decimal_number + 10
     return decimal_number
